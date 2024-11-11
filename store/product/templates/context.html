@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        {{ name }}<br>
+        {{ age }}<br>
+        {{ address }}<br>
+        {{ products }}
+
+        <!-- {% if i in products %}
+           <li>{{male}}</li>
+        {% elif i=1 %}
+           <li>{{female}}</li>
+        {% else %}
+           <li>{{others}}</li>
+        {% endif %} -->
+
+        {% if gender == 0 %}
+            <h1>male</h1>
+        {% elif gender == 1 %}
+            <h1>female</h1>
+        {% else %}
+            others
+        {% endif %}
+
+    </h1>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 class="title">Vegetables Page</h1>
+
+<div class="container text-center" style="background-color: lightblue; padding-top: 10px; padding-bottom: 10px;">
+    {% for i in veg %}
+
+    <div class="card" style="width: 18rem; text-align: center; display: inline-block; margin-left: 30px;">
+        <img src="{{ i.veg_image.url }}" class="card-img-top" style="height: 300px;" alt="...">
+        <div class="card-body">
+            <p class="card-text">{{ i.veg_name }}</p>
+            <h6>{{ i.veg_price }}</h6>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+{% endblock %}
